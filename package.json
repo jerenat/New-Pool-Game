@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "build": "tailwindcss -i src/views/public/style/css/_main.css -o src/views/public/style/css/main.css --watch"
+    "build": "tailwindcss -i src/views/public/css/_main.css -o src/views/public/css/main.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,8 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.9.7"
+    "mysql2": "^3.9.7",
+    "socket.io": "^4.7.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
