@@ -20,7 +20,8 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.7",
-    "socket.io": "^4.7.5"
+    "socket.io": "^4.7.5",
+    "ua-parser-js": "^1.0.38"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

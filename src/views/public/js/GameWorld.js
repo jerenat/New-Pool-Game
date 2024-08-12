@@ -80,3 +80,22 @@ GameWorld.prototype.ballsMoving = function(){
 
     return ballsMoving;
 }
+
+
+GameWorld.prototype.updateState = function(newState) {
+    // Actualizar las posiciones de las bolas
+    for (let i = 0; i < this.balls.length; i++) {
+        const ballState = newState.balls[i];
+        this.balls[i].position = new Vector2(ballState.position.x, ballState.position.y);
+        this.balls[i].velocity = new Vector2(ballState.velocity.x, ballState.velocity.y);
+        this.balls[i].moving = ballState.moving;
+        this.balls[i].visible = ballState.visible;
+    }
+
+    // Actualizar el estado del palo
+    this.stick.position = new Vector2(newState.stick.position.x, newState.stick.position.y);
+    this.stick.rotation = newState.stick.rotation;
+    this.stick.power = newState.stick.power;
+    this.stick.origin = new Vector2(newState.stick.origin.x, newState.stick.origin.y);
+    this.stick.shot = newState.stick.shot;
+};

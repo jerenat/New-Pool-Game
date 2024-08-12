@@ -52,7 +52,7 @@ export const ifnoauth = async (req, res, next) => {
     if (!id > 0) {
       next();
     } else {
-      res.redirect("/profile");
+      res.redirect("/game/1");
     }
   });
 };
